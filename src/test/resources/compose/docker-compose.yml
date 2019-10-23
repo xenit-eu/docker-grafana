@@ -1,0 +1,7 @@
+version: "2.2"
+
+services:
+  grafana:
+    image: $DOCKER_IMAGE
+    ports:
+      - ${GRAFANA_TCP_3000:-3000:3000}
